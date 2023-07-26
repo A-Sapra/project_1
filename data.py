@@ -19,7 +19,7 @@ def log_to_db(action, parameter, status):
     db = dbconnect()
     cursor = db.cursor()
 
-    insert_query ="INSERT INTO log (action, parameter, statsus) VALUES (%s, %s, %s);"
+    insert_query ="INSERT INTO log (action, parameter, status) VALUES (%s, %s, %s);"
     cursor.execute(insert_query, (action, parameter, status))
     db.commit()
 
@@ -47,13 +47,13 @@ def get_log(start, end):
         select_query = "SELECT date, action, parameter, status FROM log "
 
         if start_date is not None and end_date is not None:
-            select_query +="Where date >= '" + start + " ' AND date <= '" + end + "' "
+            select_query +="Where date >= '" + start + "' AND date <= '" + end + "' "
         elif start_date is None and end_date is None:
             select_query += "WHERE date >= '" + start + "' "
         elif start_date is None and end_date is not None:
             select_query += "WHERE date <= '" + end + "' "
 
-        select_quert += "ORDER by date"
+        select_query += "ORDER by date"
         cursor.execute(select_query)
 
         columns = [col[0] for col in cursor.description]
@@ -72,3 +72,29 @@ def get_log(start, end):
     log_to_db("GET LOGS", "", "SUCCESS")
     return jsonify(logs)
 
+def get_stat():
+    db=dbconnect()
+    cursor = db.cursor()
+    try:
+        backup_count_query = "Select COUNT(*) FROM log WHERE status='SUCCESS' AND action='BACKUP'"
+        cursor.execute(backup_count_query)
+        number_of_backups = cursor.fetchone()
+
+        success_count_query = "SELECT COUNT(*) FROM log WHERE status='SUCCESS' AND action='BACKUP'"
+        cursor.execute(success_count_query)
+        number_of_successes = cursor.fetchone()
+
+        error_count_query = "SELECT COUNT(*) FROM log WHERE status='ERROR' AND action='BACKUP'"
+        curson.execute(error_count_query)
+        number_of_errors = cursor.fetchone()
+    finally:
+        cursor.close()
+        db.close()
+
+    log_to_db("GET STATS", "", "SUCCESS")
+    return jsonify({
+        "number-of-backups": number_of_backups[0],
+        "successful-backups": number_of_successes[0],
+        "failed-backups": number_of_errors[0]
+    })
+dir

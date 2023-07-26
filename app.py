@@ -1,6 +1,6 @@
 from flask import Flask, request
 from backup import backup_folder
-from data import get_log
+from data import get_log, get_stat
 
 app = Flask(__name__)
 
@@ -26,6 +26,7 @@ def stat():
 
 @app.route('/', methods=['POST'])
 def backup():
+
     folder_to_backup = request.json["path"]
     try:
         if folder_to_backup is None:
@@ -33,8 +34,8 @@ def backup():
             return response, 400
 
         backup_folder(folder_to_backup)
-        response = "Backup completeed"
-        return respinse, 201
+        response = "Backup completed"
+        return response, 201
     except ValueError:
         response = "No such folder: " + folder_to_backup
         return response, 404
