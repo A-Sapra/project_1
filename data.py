@@ -50,13 +50,13 @@ def get_log(start, end):
         select_query = "SELECT date, action, parameter, status FROM log "
 
         if start_date is not None and end_date is not None:
-            select_query += "Where date >= '" + start + "' AND date <= '" + end + "' "
-        elif start_date is None and end_date is None:
+            select_query += "WHERE date >= '" + start + "' AND date <= '" + end + "' "
+        elif start_date is not None and end_date is None:
             select_query += "WHERE date >= '" + start + "' "
         elif start_date is None and end_date is not None:
             select_query += "WHERE date <= '" + end + "' "
 
-        select_query += "ORDER by date"
+        select_query += "ORDER BY date"
         cursor.execute(select_query)
 
         columns = [col[0] for col in cursor.description]
