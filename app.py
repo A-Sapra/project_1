@@ -9,14 +9,15 @@ app = Flask(__name__)
 def log():
     try:
         start = request.args.get('start')
-        end = requet.args.get('end')
+        end = request.args.get('end')
 
         logs = get_log(start, end)
         response = logs
-        return resposne
+        return response
     except ValueError:
         response = "Invalid Dates"
         return response, 400
+
 
 @app.route('/stat')
 def stat():
@@ -24,9 +25,9 @@ def stat():
     response = stats
     return response
 
+
 @app.route('/', methods=['POST'])
 def backup():
-
     folder_to_backup = request.json["path"]
     try:
         if folder_to_backup is None:
@@ -39,6 +40,7 @@ def backup():
     except ValueError:
         response = "No such folder: " + folder_to_backup
         return response, 404
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

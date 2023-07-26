@@ -8,6 +8,7 @@ sql_host = os.environ.get('SQL_HOST')
 if sql_host is None or not sql_host:
     sql_host = 'localhost'
 
+
 def dbconnect():
     return mysql.connector.connect(
         host=sql_host,
@@ -15,16 +16,18 @@ def dbconnect():
         password="password",
         database="fca")
 
+
 def log_to_db(action, parameter, status):
     db = dbconnect()
     cursor = db.cursor()
 
-    insert_query ="INSERT INTO log (action, parameter, status) VALUES (%s, %s, %s);"
+    insert_query = "INSERT INTO log (action, parameter, status) VALUES (%s, %s, %s);"
     cursor.execute(insert_query, (action, parameter, status))
     db.commit()
 
     cursor.close()
     db.close()
+
 
 def get_log(start, end):
     start_date = None
@@ -47,7 +50,7 @@ def get_log(start, end):
         select_query = "SELECT date, action, parameter, status FROM log "
 
         if start_date is not None and end_date is not None:
-            select_query +="Where date >= '" + start + "' AND date <= '" + end + "' "
+            select_query += "Where date >= '" + start + "' AND date <= '" + end + "' "
         elif start_date is None and end_date is None:
             select_query += "WHERE date >= '" + start + "' "
         elif start_date is None and end_date is not None:
@@ -72,8 +75,9 @@ def get_log(start, end):
     log_to_db("GET LOGS", "", "SUCCESS")
     return jsonify(logs)
 
+
 def get_stat():
-    db=dbconnect()
+    db = dbconnect()
     cursor = db.cursor()
     try:
         backup_count_query = "Select COUNT(*) FROM log WHERE status='SUCCESS' AND action='BACKUP'"
@@ -97,4 +101,6 @@ def get_stat():
         "successful-backups": number_of_successes[0],
         "failed-backups": number_of_errors[0]
     })
+
+
 dir
