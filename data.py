@@ -89,7 +89,7 @@ def get_stat():
         number_of_successes = cursor.fetchone()
 
         error_count_query = "SELECT COUNT(*) FROM log WHERE status='ERROR' AND action='BACKUP'"
-        curson.execute(error_count_query)
+        cursor.execute(error_count_query)
         number_of_errors = cursor.fetchone()
     finally:
         cursor.close()
