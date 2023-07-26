@@ -11,6 +11,7 @@ if backup_folder_path is None or not backup_folder_path:
 if not os.path.exists(backup_folder_path):
     os.makedirs(backup_folder_path)
 
+
 def backup_folder(source_folder_path):
     if not os.path.exists(source_folder_path):
         log_to_db("BACKUP", "Folder=" + source_folder_path, "ERROR")
