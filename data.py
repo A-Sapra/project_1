@@ -64,7 +64,6 @@ def get_log(start, end):
         rows = cursor.fetchall()
 
         logs = []
-
         for row in rows:
             record = dict(zip(columns, row))
             logs.append(record)
@@ -80,7 +79,7 @@ def get_stat():
     db = dbconnect()
     cursor = db.cursor()
     try:
-        backup_count_query = "Select COUNT(*) FROM log WHERE status='SUCCESS' AND action='BACKUP'"
+        backup_count_query = "Select COUNT(*) FROM log WHERE action='BACKUP'"
         cursor.execute(backup_count_query)
         number_of_backups = cursor.fetchone()
 
