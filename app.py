@@ -1,10 +1,12 @@
+# importing all of the needed libraries
 from flask import Flask, request
 from backup import backup_folder
 from data import get_log, get_stat
 
+#naming flask app
 app = Flask(__name__)
 
-
+#defining the route for log
 @app.route('/log')
 def log():
     try:
@@ -18,14 +20,14 @@ def log():
         response = "Invalid Dates"
         return response, 400
 
-
+#definiitng stat function
 @app.route('/stat')
 def stat():
     stats = get_stat()
     response = stats
     return response
 
-
+#defining backup function
 @app.route('/', methods=['POST'])
 def backup():
     folder_to_backup = request.json["path"]
