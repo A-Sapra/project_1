@@ -97,8 +97,8 @@ def get_stat():
     log_to_db("GET STATS", "", "SUCCESS")
     return jsonify({
         "number-of-backups": number_of_backups[0],
-        "\nsuccessful-backups": number_of_successes[0],
-        "\nfailed-backups": number_of_errors[0]
+        "<br>successful-backups": number_of_successes[0],
+        "<br>failed-backups": number_of_errors[0]
     })
 
 
