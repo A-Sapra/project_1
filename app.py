@@ -4,6 +4,9 @@ from data import get_log, get_stat
 
 app = Flask(__name__)
 
+@app.route('/test')
+def test():
+    return "test"
 
 @app.route('/log')
 def log():
