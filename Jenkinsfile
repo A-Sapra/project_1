@@ -10,9 +10,10 @@ pipeline {
                 sh "sudo docker image ls"
             }   
         }
-        stage('push')
+    }
+        stage('push') {
             steps {
                 sh "sudo docker login localhost:8083 -u ${NEXUS_LOGIN_USR} -p ${NEXUS_LOGIN_PSW}"
             }
-    }
+        }
 }
