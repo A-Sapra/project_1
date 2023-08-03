@@ -17,7 +17,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh "sudo docker push localhost:8083/pythonapp:newjenkinsbuild"
+                sh "sudo docker push localhost:8083/pythonapp:newest"
             }
         }
     }
