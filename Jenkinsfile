@@ -15,5 +15,10 @@ pipeline {
                 sh "sudo docker login localhost:8083 -u ${NEXUS_LOGIN_USR} -p ${NEXUS_LOGIN_PSW}"
             }
         }
+        stage('deploy') {
+            steps {
+                sh "sudo docker push localhost:8083/pythonapp:newjenkinsbuild"
+            }
+        }
     }
 }
