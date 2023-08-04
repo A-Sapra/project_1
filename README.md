@@ -31,16 +31,22 @@ You should consider the concept of MVP (Minimum Viable Product) as you plan your
 
 ## Tasks
 Configure Nexus - initial setup of the programme
-Configure Nexus for docker, you will need at least 1 private repository hosted in docker.
-Produce Application Image using docker 
-You will need to provision and set up a VM that can run your Jenkins Pipeline and also to host your Nexus Repository
-Ensure that the application from project 1 runs in a container on the VM
-You will use docker syntax to ensure that an image is generated that can be stored in the Nexus repo
-Be sure to demonstrate testing of your deployment to Nexus.
-Create Jenkins Pipeline for automation
-The previous tasks can be automated by Jenkins. Create a Jenkinsfile that will automate this process. Ensure that Jenkins is correctly connecting to the Nexus repository and has the correct permissions to use docker.
-Deliverables
 
+Configure Nexus for docker, you will need at a docker hosted repository and docker proxy repository
+
+You will need to provision and set up a VM that can run your Jenkins Pipeline and also to host your Nexus Repository - this should be provided
+
+Ensure that the application from project 1 runs in a container on the VM
+
+You will use docker syntax to ensure that an image is generated that can be stored in the Nexus repo.
+
+Be sure to demonstrate testing of your deployment to Nexus.
+
+Create Jenkins Pipeline for automation - Jenkinsfile in the repo needs to be in the directory before the code. 
+
+The previous tasks can be automated by Jenkins. Create a Jenkinsfile that will automate this process. Ensure that Jenkins is correctly connecting to the Nexus repository and has the correct permissions to use docker.
+
+## Deliverables
 The final deliverable for this project is a completed CI Pipeline with full documentation around the utilisation of supporting tools. Your documentation should also include evidence of design, risk assessment and testing.
 The CI Pipeline needs to be able to successfully deploy the application you have created as per the requirements. Your pipeline should support fully automatic deployment of code updates in real time, including pushing the latest image to the nexus repository.
 Your database should be an inline sqlite database in this case, successful connections to a database instance or sql container will not garner extra marks, though it would demonstrate a greater skillset.
@@ -50,6 +56,10 @@ Your database should be an inline sqlite database in this case, successful conne
 Database in MySQL workbench -
 
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/a11eb849-fb3e-4617-93d5-702c8fdc4096)
+
+Using Trello - 
+
+![image](https://github.com/A-Sapra/project_1/assets/139867167/4fcda6ad-563c-4caf-97d0-3a9b815a4462)
 
 
 # Risk assessment
