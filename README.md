@@ -43,6 +43,10 @@ Use windows command line to use docker and download images
 Set up nexus repos 
 
 # Nexus screenshots - 
+Nexus credentials - 
+username - admin
+initial password - comes from command line when running the setup file
+password - root
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/f0c74ea0-8fb9-4032-a655-e070bdfb4985)
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/743d31c0-e7c9-4476-8a88-4d59301dd092)
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/1f21def8-3252-42ad-8375-9cd2d7ce115d)
@@ -66,6 +70,35 @@ Set up nexus repos
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/6c8295ef-e137-4bf4-91c2-77b20979edb4)
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/7880af8b-07b0-4fe8-af81-2853c164cd3b)
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/1d0c651d-fed3-4e72-8af9-98b2539b4136)
+
+# MySQL workbench -
+
+![image](https://github.com/A-Sapra/project_1/assets/139867167/d794c452-4303-43cf-aa5c-9ed62240ddfc)
+
+# Jenkins screenshots - 
+jenkins credentials - 
+username - AS
+password - root
+![image](https://github.com/A-Sapra/project_1/assets/139867167/d0b500c0-b970-4796-ba95-b8bf7cce696c)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/2798cf5b-e86d-4b18-8cc2-9c13667a9c41)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/4969b287-c5ed-4003-8bb8-ec3939a9e38b)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/ab438741-b75c-43a3-861d-9fd9552cf9c1)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/6481fbfb-a4ba-4a4e-b439-688a5d4818b9)
+
+actual jenkins file - 
+![image](https://github.com/A-Sapra/project_1/assets/139867167/a80aa2c5-68cc-4895-8e09-7424776659cd)
+
+running jenkins builds
+![image](https://github.com/A-Sapra/project_1/assets/139867167/b4256436-bde7-4a1c-9502-f345c9ad4241)
+
+console output -
+![image](https://github.com/A-Sapra/project_1/assets/139867167/8060dd58-ed6f-4cf2-a19f-3fb05da94440)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/daf35e83-4bc1-423a-b3fa-904916eae1e6)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/4e8031d8-5d36-495f-8009-6ca95a6c9cdc)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/f359552a-bb00-46b3-8393-2af8d22a8ae3)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/c69cb686-5b2d-440c-9a2e-17519457597e)
+
+
 
 
 
