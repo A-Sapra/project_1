@@ -17,3 +17,20 @@ The technologies that are to be used include:
 -CI Server: Jenkins  
 -Containerisation: Docker 
 -Central repository :Nexus 
+
+#Docker commands in windows command line - 
+![image](https://github.com/A-Sapra/project_1/assets/139867167/42fe7f40-ecfe-4de5-bf1e-c45cd40c4deb)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/5fdccf7a-8f37-40d3-902b-662c73b52ac1)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/2fde72c0-5016-47dd-a412-d16334e0f784)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/d3f8d215-790c-47c6-91b7-e8e43a200d4d)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/47c68798-3587-4cc9-a0ad-924f8fa854dc)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/788d2362-f1ff-4dab-9ad3-7e8732564571)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/10e16310-581e-4f93-83e2-0a448864e43e)
+
+
+
+
+
+
+
+
