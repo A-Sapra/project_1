@@ -18,6 +18,11 @@ The technologies that are to be used include:
 -Containerisation: Docker 
 -Central repository :Nexus 
 
+# Plannnig
+
+# Risk assessment
+
+
 # Steps -
 Setup docker desktop and change docker engine to allow insecure registries
 # Docker desktop 
