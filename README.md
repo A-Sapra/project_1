@@ -61,6 +61,9 @@ Using Trello -
 
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/4fcda6ad-563c-4caf-97d0-3a9b815a4462)
 
+![image](https://github.com/A-Sapra/project_1/assets/139867167/94680c48-5a95-436e-aed3-0576f0fb5749)
+
+
 
 # Risk assessment
 
@@ -96,7 +99,7 @@ Set up nexus repos
 # Nexus screenshots - 
 Nexus credentials - 
 username - admin
-initial password - comes from command line when running the setup file
+initial password - comes from command line when running the run.sh file
 password - root
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/f0c74ea0-8fb9-4032-a655-e070bdfb4985)
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/743d31c0-e7c9-4476-8a88-4d59301dd092)
