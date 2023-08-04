@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/test')
 def test():
-    return "test"
+    return "This is to test the code is being updated and newest version is being deployed"
 
 @app.route('/log')
 def log():
