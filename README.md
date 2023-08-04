@@ -7,7 +7,7 @@ Create a python Flask app to be able to backup a file, connected to a MYQSL data
 
 # Project_2 - Jenkins (CI/CD), Docker, NEXUS
 
-Objective - 
+## Objective - 
 Use Jenkins and Nexus to automate a CI pipline for the backup app built in project 1. It should be able to push new changes to the repository when changes are made to the source code.
 
 The technologies that are to be used include:
@@ -20,7 +20,7 @@ The technologies that are to be used include:
 -Containerisation: Docker 
 -Central repository :Nexus 
 
-The requirements of the project are as follows:
+## The requirements of the project are as follows:
 
 To use a Trello board (or equivalent Kanban board tech) with full expansion on user stories, use cases and tasks needed to complete the project. It could also provide a record of any issues or risks that you faced creating your project.
 To use an inline relational database used to store data persistently for the project.
@@ -29,7 +29,7 @@ To deploy a containerised image of project 1's application stored in a nexus rep
 For code to be fully integrated into a Version Control System using the Feature-Branch model which will subsequently be built through a CI server and deployed to a cloud-based virtual machine.
 You should consider the concept of MVP (Minimum Viable Product) as you plan your project, completing all the requirements above before you add extra functionality that is not specified above.
 
-Tasks
+## Tasks
 Configure Nexus - initial setup of the programme
 Configure Nexus for docker, you will need at least 1 private repository hosted in docker.
 Produce Application Image using docker 
