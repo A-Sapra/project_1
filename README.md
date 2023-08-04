@@ -51,7 +51,7 @@ The final deliverable for this project is a completed CI Pipeline with full docu
 The CI Pipeline needs to be able to successfully deploy the application you have created as per the requirements. Your pipeline should support fully automatic deployment of code updates in real time, including pushing the latest image to the nexus repository.
 Your database should be an inline sqlite database in this case, successful connections to a database instance or sql container will not garner extra marks, though it would demonstrate a greater skillset.
 
-# Plannnig
+# Plannig
 
 Database in MySQL workbench -
 
