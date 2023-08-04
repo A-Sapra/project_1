@@ -78,7 +78,27 @@ Using Trello -
 
 
 # Steps -
-Setup docker desktop and change docker engine to allow insecure registries using code below in screenshots
+Setup docker desktop and change docker engine to allow insecure registries using code below and in screenshots
+
+
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "experimental": false,
+  "features": {
+    "buildkit": true
+  },
+  "insecure-registries": [
+    "localhost:8082",
+    "localhost:8083"
+  ]
+}
+
+
 # Docker desktop 
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/30e8568c-a67e-413e-8d4d-f892ac152530)
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/9482a22b-0628-4dd3-a712-065444c4cd76)
