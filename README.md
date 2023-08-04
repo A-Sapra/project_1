@@ -10,3 +10,10 @@ Create a python Flask app to be able to backup a file, connected to a MYQSL data
 Objective - 
 Use Jenkins and Nexus to automate the build of the python flask app and be able to push new changes to the repository when changes are made to the source code.
 
+The technologies that are to be used include:
+
+-Kanban Board: Trello or an equivalent Kanban Board 
+-Version Control: Git 
+-CI Server: Jenkins  
+-Containerisation: Docker 
+-Central repository :Nexus 
