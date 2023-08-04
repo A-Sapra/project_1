@@ -58,6 +58,19 @@ Set up nexus repos
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/b3e2edf2-d0d2-4a9a-b60e-100b4c0fe0e2)
 
 # Docker file -
+![image](https://github.com/A-Sapra/project_1/assets/139867167/ce0f0a11-b45a-4356-9b84-833c1e7d1a06)
+
+# Windows command line - wsl to make linux work in command line 
+![image](https://github.com/A-Sapra/project_1/assets/139867167/d597c429-3fe2-4fe1-8a13-557881f7b48f)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/9a7b1230-5ccf-4df9-9180-181035cbdc16)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/6c8295ef-e137-4bf4-91c2-77b20979edb4)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/7880af8b-07b0-4fe8-af81-2853c164cd3b)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/1d0c651d-fed3-4e72-8af9-98b2539b4136)
+
+
+
+
+
 
 
 
