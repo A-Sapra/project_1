@@ -13,12 +13,18 @@ Use Jenkins and Nexus to automate the build of the python flask app and be able 
 The technologies that are to be used include:
 
 -Kanban Board: Trello or an equivalent Kanban Board 
+-MySQL workbench
 -Version Control: Git 
 -CI Server: Jenkins  
 -Containerisation: Docker 
 -Central repository :Nexus 
 
 # Plannnig
+
+Database in MySQL workbench -
+
+![image](https://github.com/A-Sapra/project_1/assets/139867167/a11eb849-fb3e-4617-93d5-702c8fdc4096)
+
 
 # Risk assessment
 
