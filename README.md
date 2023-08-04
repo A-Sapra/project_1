@@ -1,4 +1,4 @@
-# Project_1
+S# Project_1
 
 Author - Aman Sapra
 
@@ -80,23 +80,7 @@ Using Trello -
 # Steps -
 Setup docker desktop and change docker engine to allow insecure registries using code below and in screenshots
 
-
-{
-  "builder": {
-    "gc": {
-      "defaultKeepStorage": "20GB",
-      "enabled": true
-    }
-  },
-  "experimental": false,
-  "features": {
-    "buildkit": true
-  },
-  "insecure-registries": [
-    "localhost:8082",
-    "localhost:8083"
-  ]
-}
+![image](https://github.com/A-Sapra/project_1/assets/139867167/a0fe5024-c999-4cf0-9d73-fd823348b465)
 
 
 # Docker desktop 
