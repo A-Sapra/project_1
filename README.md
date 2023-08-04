@@ -51,6 +51,16 @@ Set up nexus repos
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/3a123420-598a-4079-a729-cdeb830eaa55)
 ![image](https://github.com/A-Sapra/project_1/assets/139867167/86ffcc51-b4b0-4b07-bd8a-91cbc401f156)
 
+# Git Bash terminal -
+![image](https://github.com/A-Sapra/project_1/assets/139867167/e5379ead-27dd-46f4-a44b-a04297304936)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/430afdbc-2b6e-48fb-935c-3bf441be1959)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/7e1c6b9c-1108-4c2d-a0f7-776ec56a69f7)
+![image](https://github.com/A-Sapra/project_1/assets/139867167/b3e2edf2-d0d2-4a9a-b60e-100b4c0fe0e2)
+
+# Docker file -
+
+
+
 
 
 
