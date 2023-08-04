@@ -64,6 +64,7 @@ Using Trello -
 
 # Risk assessment
 
+![image](https://github.com/A-Sapra/project_1/assets/139867167/2e3550a0-c266-4348-b203-d6e32dc7f2d3)
 
 
 
